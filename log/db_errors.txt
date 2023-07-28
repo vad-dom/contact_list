@@ -31,3 +31,14 @@ INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VA
 3333333
 
 
+2023-07-28 13:04:29
+Ошибка выполнения запроса:
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '800-3334444' for key 'contact_code'
+Такой был запрос:
+INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VALUES(:contact_name, :contact_code, :contact_phone)
+Такие передали параметры:
+Игорь Акинфеев
+800
+3334444
+
+
