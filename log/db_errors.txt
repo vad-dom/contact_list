@@ -1,44 +1,10 @@
-2023-07-28 08:08:36
+2023-07-31 03:42:32
 Ошибка выполнения запроса:
-SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '423-2222222' for key 'contact_code'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '800-1111111' for key 'contact_code'
 Такой был запрос:
 INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VALUES(:contact_name, :contact_code, :contact_phone)
 Такие передали параметры:
-Анхель Ди Мария
-423
-2222222
-
-
-2023-07-28 08:18:05
-Ошибка выполнения запроса:
-SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '800-1111122' for key 'contact_code'
-Такой был запрос:
-INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VALUES(:contact_name, :contact_code, :contact_phone)
-Такие передали параметры:
-Кот
+Садио Мане
 800
-1111122
-
-
-2023-07-28 09:03:54
-Ошибка выполнения запроса:
-SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '495-3333333' for key 'contact_code'
-Такой был запрос:
-INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VALUES(:contact_name, :contact_code, :contact_phone)
-Такие передали параметры:
-Мбаппе
-495
-3333333
-
-
-2023-07-28 13:04:29
-Ошибка выполнения запроса:
-SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '800-3334444' for key 'contact_code'
-Такой был запрос:
-INSERT INTO `test_contacts` (`contact_name`, `contact_code`, `contact_phone`) VALUES(:contact_name, :contact_code, :contact_phone)
-Такие передали параметры:
-Игорь Акинфеев
-800
-3334444
-
+1111111
 

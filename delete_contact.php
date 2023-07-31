@@ -5,6 +5,7 @@
 
     if ($contact_id) {
         $contacts = new Contacts();
-        echo json_encode($contacts->deleteContact($contact_id));
+        if ($contacts->dbIsNull()) echo json_encode(['result' => false]);
+        else echo json_encode($contacts->deleteContact($contact_id));
     }
 ?>

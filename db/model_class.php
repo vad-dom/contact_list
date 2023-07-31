@@ -7,9 +7,13 @@
         protected $db;
         protected $table_name;
 
-        public function __construct($table_name = '') {
+        public function __construct($table_name) {
             $this->db = DataBase::getDB();
-            if (!empty($table_name)) $this->table_name = $table_name;
+            $this->table_name = $table_name;
+        }
+
+        public function dbIsNull() {
+            return is_null($this->db);
         }
 
         private function selectData($select_fields = null) {

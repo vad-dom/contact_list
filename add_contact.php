@@ -7,6 +7,7 @@
 
     if ($contact_name && $contact_code && $contact_phone) {
         $contacts = new Contacts();
-        echo json_encode($contacts->addContact($contact_name, $contact_code, $contact_phone));
+        if ($contacts->dbIsNull()) echo json_encode(['result' => false, 'error_code' => false]);
+        else echo json_encode($contacts->addContact($contact_name, $contact_code, $contact_phone));
     }
 ?>
